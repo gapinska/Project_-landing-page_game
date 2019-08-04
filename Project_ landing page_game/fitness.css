@@ -1,0 +1,166 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+i {
+  color: #08ada0 !important;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #08ada0;
+  width: 90%;
+  text-align: center;
+}
+
+/*  Navbar css */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav img {
+  max-height: 89px;
+  max-width: 245px;
+  padding: 20px;
+}
+.slogan {
+  color: #0d8b81;
+  letter-spacing: 3px;
+  margin: 0 36px;
+  font-size: 25px;
+}
+
+.logo_slogan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+nav {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav > ul {
+  margin: 0;
+  display: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+ul > a {
+  text-decoration-line: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+#showMenu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  align-self: center;
+}
+
+#showMenu:hover + ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+}
+
+#showMenu + ul:hover {
+  display: flex;
+}
+
+main {
+  margin-top: 142px;
+}
+#return-to-top {
+  display: none;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+#team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#team > div {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-photo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 75px;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 600px) {
+  header {
+    width: 100%;
+    background-color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #showMenu {
+    display: none;
+  }
+
+  nav > ul {
+    display: flex;
+    width: auto;
+  }
+
+  ul > a {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+  /* a:hover {
+    color: #109c91;
+  } */
+
+  #team {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #team > div {
+    flex: auto;
+  }
+}
